@@ -1,0 +1,129 @@
+Part 1: Discussion Questions
+
+Recursion
+
+In your own words, what is Recursion?
+> When a function calls itself
+
+Why is it necessary to have a Base Case?
+> To break out of the loop
+
+Graphs
+
+What is a Graph?
+> Nodes and pointers deliminating connections between nodes
+
+How is a Graph different from a Tree?
+> Graphs can be cyclic, trees can't
+
+Give an example of somthing that would be good to model with a Graph.
+> Friendships, emails (like in Enron's scandal)
+
+Performance of Different Data Structures
+Fill in the runtimes for the following actions for the table below:
+
+Python List (Array):
+-Index O(1)
+-Search O(n)
+-Add-R O(1)
+-Add-L O(n)
+-Pop-L O(n)
+-Pop-R O(1)
+
+Linked List
+-Index O(n)
+-Search O(n)
+-Add-R O(1)
+-Add-L O(1)
+-Pop-L O(1)
+-Pop-R O(n)
+
+Doubly-Linked List
+-Index O(n)
+-Search O(n)
+-Add-R O(1)
+-Add-L O(1)
+-Pop-L O(1)
+-Pop-R O(1)
+
+Queue (as Array)
+-Index X
+-Search X
+-Add-R O(1)
+-Add-L X
+-Pop-L O(n)
+-Pop-R X
+
+Queue (as LL or DLL)
+-Index X
+-Search X
+-Add-R O(1)
+-Add-L X
+-Pop-L O(1)
+-Pop-R X
+
+Stack (as Array, LL, or DLL)
+-Index X
+-Search X
+-Add-R O(1)
+-Add-L X
+-Pop-L X
+-Pop-R O(1)
+
+Deque (as DLL)
+-Index X
+-Search X
+-Add-R O(1)
+-Add-LO(1)
+-Pop-L O(1)
+-Pop-R O(1)
+
+The answers for Dictionary have been provided; you should fill in the rest:
+
+Dictionary (Hash Map)
+-Get O(1)
+-Add O(1)
+-Delete O(1) 
+-Iterate O(n)
+-Memory medium
+   
+Set (Hash Map)    
+-Get O(1)
+-Add O(1)
+-Delete O(1) 
+-Iterate O(n)
+-Memory medium
+
+Binary Search Tree
+-Get O(log n)
+-Add O(n)
+-Delete O(n) 
+-Iterate O(1)
+-Memory low
+
+Tree
+-Get O(n)
+-Add O(1)
+-Delete  O(1)
+-Iterate O(1)
+-Memory low
+
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+> It takes the first two, compares them, and 'bubbles' the bigger one to the right. It repeats this until the whole thing is sorted. 
+
+Describe in words how the Merge Sort algorithm works.
+> It splits the list in half (or, close to half), until it's lots of single item lists (which are, by default, sorted). Then it puts the little pieces back together in order but up to the whole list. 
+
+Describe in words how the Quick Sort algorithm works.
+> Randomly pick a pivot from the list. Iterate through list with two index trackers, one to keep track of where the pivot should go, the other to check whether each item is less than or greater than the pivot. When the second indexer gets to each item, it moves the less than items to one side of the list and passes items that are greater than the pivot. After iterating over the entire list, the pivot moves to where the fist index tracker is, resulting in the pivot item being in its rightful place. Then the process is repeated on each side of the first pivot with a new pivot for each half. This goes on until everything is in its rightful place. 
+
+Git Branching
+
+Give an instance when you would use git branching.
+> Adding a feature, but not wanting to break what's already working on the master branch. 
+
+What is a pull request?
+> Asking the owner of the responsitory to review your branch code and pull it into the master. 
